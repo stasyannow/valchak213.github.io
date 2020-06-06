@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="form.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+	<script src="formscript.js"></script>
+	<script defer src="addEventListener.js"></script>
+	<title>Форма для реєстрації</title>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<form class="registrationForm" action="" method="post" id="formID">
+				 <div class="formtitle">
+					<p id="regtitle">Форма для реєстрації</p>
+				</div>
+				
+			     <div class="dataInput">
+			     	<label>Ім'я</label>
+			     	<input type="text" id="username"  class="input" name="name">
+			     </div>
+
+			     <div class="dataInput">
+			     	<label>Прізвище</label>
+			     	<input type="text" id="username"  class="input" name = "surname">
+			     </div>
+
+			     <div class="dataInput">
+				     <label>Пароль</label>
+				     <input id="password" type="password"  class="input" name="pass">
+				 </div>
+
+				 <div class="dataInput">
+                  <label>Email</label>
+                  <input type="email" class="input" id="email" name="email">
+                </div>    
+
+                <div class="dataInput">
+                  <label id="tel">Номер телефону</label>
+                  <input type="num" class="input" name="phone">
+                </div>
+
+                <div class="chck">
+				     <input type="checkbox" class="checkbox" id="custom-checkbox" >
+				     <label for="checkbox" class="checkbox">Запам'ятати мене</label>
+			     </div>
+			     <div class="submitbutton" >
+			     	<input type="submit" value="Підтвердити" class="button" onclick= "isValid()">
+			     </div>
+			</form>
+		</div>
+	</main>
+</body>
+</html>
